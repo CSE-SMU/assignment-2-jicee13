@@ -1,0 +1,175 @@
+.center {
+  margin: auto;
+  position: relative;
+  top: 25%;
+}
+
+.face {
+  width: 20em;
+  height: 23em;
+  border-radius: 150px;
+  background: blue;
+  overflow: hidden;
+}
+
+.hair {
+  width: 20em;
+  height: 5em;
+  border-radius: 150px;
+  background: brown;
+}
+
+.hair::before {
+  position: absolute;
+  top: 19%;
+  left: 70%;
+  content: '';
+  width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid blue;
+}
+
+.hair::after {
+  position: absolute;
+  top: 25%;
+  left:40%;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+  content: "I luv mom";
+}
+
+.headband {
+  width: 20em;
+  height: 3em;
+  top: 90%;
+  border-radius: 150px;
+  background: green;
+}
+
+.headband::after {
+  position: absolute;
+  display:inline-block;
+  left: 30%;
+  content: url('flash.jpg');
+  width: 14px;
+
+}
+
+.nose {
+  top: 35%;
+  width: 4em;
+  height: 5em;
+  border-radius: 150px;
+  background: purple;
+}
+
+.nose::before {
+  position: absolute;
+  top: 69%;
+  left: 25%;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  content: '\2022';
+}
+
+.nose::after {
+  position: absolute;
+  top: 69%;
+  left: 65%;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  content: '\2022';
+}
+
+.mouth {
+  position: absolute;
+  top: 65%;
+  left: 33%;
+  width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  overflow: hidden;
+}
+
+.mouth::before {
+  position: inherit;
+  margin: auto;
+  content: '';
+  top: 60%;
+  display: circle;
+  background: black;
+  width: 9em;
+  height: 8em;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.mouth::after {
+  position: inherit;
+  content: '';
+  top: 85%;
+  left: 20%;
+  display: block;
+  width: 5em;
+  height: 3em;
+  background: red;
+  border-radius: 100px;
+}
+
+.freckle:first-child {
+  position: absolute;
+  top: auto;
+  background: purple;
+}
+
+.eye {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  border-radius: 200px;
+  background: white;
+}
+
+.eye:first-child {
+  left: 60%;
+}
+
+.eye:last-child {
+  left: 20%;
+}
+
+.eye::before {
+  position: inherit;
+  content: '';
+  top: 15%;
+  left: 15%;
+  width: 2.5em;
+  height: 2.5em;
+  -moz-border-radius: 1.25em;
+  -webkit-border-radius: 1.25em;
+  border-radius: 1.25em;
+  border-style: solid;
+  border-width: 5px;
+  border-color: purple;
+  background: black;
+}
+
+.eye::after {
+  position: inherit;
+  content: '';
+  bottom: 100%;
+  width: 4em;
+  height: 1em;
+  border-radius: 150px;
+  border-top-right-radius: 2em;
+  border-top-style: solid;
+  border-top-color: black;
+}
